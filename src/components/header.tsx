@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { IconInnerShadowTop } from '@tabler/icons-react';
 import React from 'react';
 
 export function Header() {
@@ -8,7 +9,12 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center px-10">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="hidden font-bold sm:inline-block">Publyze</span>
+            <div className="p-1.5 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg shadow-sm">
+              <IconInnerShadowTop className="size-5 text-white" />
+            </div>
+            <span className="hidden text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent sm:inline-block">
+              Publyze
+            </span>
           </Link>
           <nav className="flex items-center gap-6 text-sm">
             <Link
@@ -43,7 +49,12 @@ export function Header() {
               href="/"
               className="mr-6 flex items-center space-x-2 md:hidden"
             >
-              <span className="font-bold">Publyze</span>
+              <div className="p-1.5 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg shadow-sm">
+                <IconInnerShadowTop className="size-5 text-white" />
+              </div>
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                Publyze
+              </span>
             </Link>
           </div>
           <nav className="flex items-center gap-2">
